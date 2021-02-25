@@ -15,7 +15,7 @@ const fishCollection = [
         name: "Bob",
         species: "Guppy",
         inches: 3,
-        image: "bluefish.jpg"
+        image: "catfish.jpg"
     },
     { saltWater: true, harvestLocation: "Atlantic Ocean", diet: "squid", name: "BigBoss", species: "Amber Jack", inches: 60, image: "bluefish.jpg" },
     {
