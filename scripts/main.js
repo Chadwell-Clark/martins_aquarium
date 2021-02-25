@@ -1,5 +1,8 @@
 console.log("main is loaded");
-import {  getFish } from "./FishDataProvider.js";
+import { getFish } from "./FishData.js"
 
-console.log('fish collection' ,getFish);
+import { FishList } from "./FishList.js";
+FishList();
+
+
 
