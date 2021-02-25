@@ -53,7 +53,7 @@ nav a:active {
 	display: flex;
 }
 
-.fishList{
+#fishList{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;	
@@ -73,7 +73,7 @@ nav a:active {
 }
 
 .fish-image {
-	width: 100%;
+	width: 240px;
 	height: auto;
 }
 
