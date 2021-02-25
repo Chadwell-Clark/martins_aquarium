@@ -1,0 +1,1 @@
+import { getFish } from "./FishDataProvider.js";
