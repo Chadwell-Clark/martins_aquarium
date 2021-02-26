@@ -83,10 +83,13 @@ nav a:active {
 }
 
 .martinsTips {
+	display:flex;
+	flex-direction: column;
     margin: 0 10px 0 0;
     background: #498aa0;
     border-radius: 15px;
     padding: 10px;
+	justify-content: space-around;
 }
 
 .martinsTips__title {
@@ -102,14 +105,15 @@ nav a:active {
     border: 3px rgb(231, 16, 16) solid;
 }
 .location-quotes {
-	/* flex-direction: column; */
-	border: 1px black solid;
 	padding-left: 20px;
+	flex-direction: column;
+	/* border: 6px rgb(245, 211, 16) solid; */
+	border-bottom: black 3px solid;
 }
 .quote-title {
 	flex-direction: row;
 	padding: 5px 20px;
-	border: 1px black solid;
+	border: 1px rgb(18, 25, 223) solid;
 }
 .location {
 	display: flex;
@@ -117,19 +121,20 @@ nav a:active {
 	border: 1px solid rgb(4, 247, 234);
 }
 .location-title {
-	flex-direction: row;
+	/* flex-direction: row; */
 	padding: 5px 20px;
 	border: 1px black solid;
 	
 }
 .location-card {
 	/* display: flex; */
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: row; 
+	/* flex-wrap: wrap;  */
 	padding: .5em;
 	margin: .2em;
 	font-size: .8em;
 	border: 1px solid black;
+	width: 15%;
 }
 .section-main {
 	margin: 1em;
