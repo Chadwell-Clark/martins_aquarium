@@ -58,10 +58,10 @@ const fishCollection = [
         saltwater: true,
         harvestLocation: "Atlantic Ocean",
         diet: "Plankton",
-        fishName: "Nemo",
+        name: "Nemo",
         species: "Clownfish",
         inches: 4,
-        image: "bluefish.jpg"
+        image: "puddles.jpg"
     },
     {
         saltwater: false,
@@ -123,10 +123,10 @@ const fishCollection = [
         saltwater: false,
         harvestLocation: "TN River",
         diet: "Bacon",
-        name: "Finn",
+        name: "Phinn",
         species: "Bass",
         inches: 20,
-        image: "bluefish.jpg",
+        image: "phish.jpg",
     },
     {
         saltwater: true,
@@ -199,7 +199,7 @@ const fishCollection = [
         name: "Frank",
         species: "Piranha",
         inches: 7,
-        image: "bluefish.jpg"
+        image: "frank.jpg"
     },
     { saltwater: true, harvestLocation: "Atlantic, Pacific, and southern sea", diet: "smaller fish", name: "bluefin tuna", species: "Thunnus thynnus", inches: 84, image: "bluefish.jpg" },
     {
