@@ -1,12 +1,12 @@
 import { Location } from "./Location.js";
-import { getLocation } from "./LocationData";
+import { getLocation } from "./LocationData.js";
 
-export const locationList = () => {
+export const LocationList = () => {
     const allLocations = getLocation();
     const LocDOMLocation = document.querySelector("#locationList");
     let locHTML = "";
     for (const location of allLocations) {
         locHTML += Location(location);
     }
-    LocDOMLocation += locHTML;
+    LocDOMLocation.innerHTML += locHTML;
 };

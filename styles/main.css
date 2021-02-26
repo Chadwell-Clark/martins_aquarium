@@ -104,8 +104,10 @@ nav a:active {
     flex-direction: column;
     border: 1px black solid;
 }
-.location {
-
+.location-card {
+	padding: .5em;
+	margin: .2em;
+	font-size: .8em;
 }
 .section-main {
 	margin: 1em;
