@@ -17,7 +17,7 @@ export const FishList = () => {
     for (const onefish of allfishes) {
         fishHTMLRepresentations += Fish(onefish);
     }
-    
+
     // console.log("fishHTMLRepresentations", fishHTMLRepresentations);
     DOMLocation.innerHTML += fishHTMLRepresentations;
         
