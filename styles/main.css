@@ -78,7 +78,8 @@ nav a:active {
 
 .fish-image {
 	width: 200px;
-	height: auto;
+	height: 130px;
+	/* object-fit: contain; */
 }
 
 .martinsTips {
@@ -98,16 +99,37 @@ nav a:active {
 }
 .locations {
     flex-direction: column;
-    border: 1px black solid;
+    border: 3px rgb(231, 16, 16) solid;
 }
 .location-quotes {
-    flex-direction: column;
-    border: 1px black solid;
+	/* flex-direction: column; */
+	border: 1px black solid;
+	padding-left: 20px;
+}
+.quote-title {
+	flex-direction: row;
+	padding: 5px 20px;
+	border: 1px black solid;
+}
+.location {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgb(4, 247, 234);
+}
+.location-title {
+	flex-direction: row;
+	padding: 5px 20px;
+	border: 1px black solid;
+	
 }
 .location-card {
+	/* display: flex; */
+	flex-direction: row;
+	flex-wrap: wrap;
 	padding: .5em;
 	margin: .2em;
 	font-size: .8em;
+	border: 1px solid black;
 }
 .section-main {
 	margin: 1em;
