@@ -34,7 +34,7 @@ const fishCollection = [
         name: "Predator",
         species: "catfish",
         inches: 20,
-        image: "bluefish.jpg"
+        image: "predator.jpg"
     },
     {
         saltwater: true,
@@ -70,7 +70,7 @@ const fishCollection = [
         name: "Vacuum",
         species: "Catfish",
         inches: 24,
-        image: "bluefish.jpg"
+        image: "vacuum.jpg"
     },
     {
         saltwater: false,
@@ -90,8 +90,8 @@ const fishCollection = [
         inches: 39,
         image: "bluefish.jpg"
     },
-    { saltwater: true, harvestLocation: "South Pacific", diet: "shrimp", inches: 64, species: "Tuna", name: "Bruno", image: "bluefish.jpg" },
-    { saltwater: false, harvestLocation: "Petsmart", diet: "algae", name: "Dorothy", species: "goldfish", inches: 3, image: "bluefish.jpg" },
+    { saltwater: true, harvestLocation: "South Pacific", diet: "shrimp", inches: 64, species: "Tuna", name: "Bruno", image: "Giordano-Bruno.jpg" },
+    { saltwater: false, harvestLocation: "Petsmart", diet: "algae", name: "Dorothy", species: "goldfish", inches: 3, image: "dorothy.jpg" },
     {
         saltwater: false,
         harvestLocation: "Lake Tahoe",
@@ -135,7 +135,7 @@ const fishCollection = [
         species: "lionfish",
         harvestLocation: "Red Sea",
         Inches: 10,
-        image: "bluefish.jpg"
+        image: "Simba.jpg"
     },
     {
         saltwater: true,
