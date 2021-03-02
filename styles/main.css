@@ -55,8 +55,20 @@ nav a:active {
 
 #fishList{
 	display: flex;
+	flex-flow: wrap column;
+	justify-content: space-evenly;
+	/* border: 1px black solid;	 */
+}
+.fish-heading {
+	text-align: center;
+	
+}
+.fishSection {
+	display:flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;	
+	justify-content:space-around;
+
+	/* border: 1px black solid; */
 }
 
 .fish-card {
@@ -97,14 +109,7 @@ nav a:active {
 	justify-content: space-evenly;
 	
 }
-#tipList {
-	/* display: flex; */
-	/* flex-flow: column nowrap; */
-	/* align-items:stretch; */
-	/* align-content: space-between; */
-	/* flex: 1; */
-	/* border: greenyellow solid 1px; */
-}
+
 
 .martinsTips__title {
     border-bottom: 4px black solid;
@@ -112,9 +117,7 @@ nav a:active {
     text-align: center;
 	/* border:honeydew 1px solid; */
 }
-.martins-tips {
-	/* border:hotpink 4px solid; */
-}
+
 .martinsTips__break {
     text-align: center;
 	justify-content:space-around;
