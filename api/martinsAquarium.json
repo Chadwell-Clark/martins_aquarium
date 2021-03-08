@@ -91,7 +91,7 @@
       "image": "bluefish.jpg"
     },
     {
-      "saltwater": "false",
+      "saltwater": false,
       "harvestLocation": "Cumberland River",
       "diet": "anything",
       "name": "Whiskers",
