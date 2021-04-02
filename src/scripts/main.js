@@ -61,22 +61,32 @@
 
 
 //!!!!!!!!        **      Original Above        **        !!!!
-//!!!****************  Refactor #2 Below      ********!!
+// //!!!****************  Refactor #2 Below      ********!!
 
 console.log("main is loaded");
-import { getMostHolyFish, getSoldierFish, getUnworthy } from "./fish/FishData.js";
-import { FishList } from "./fish/FishList.js";
+import { getMostHolyFish, getSoldierFish, getUnworthy, useHolyFish, useUnworthyFish, useSoldierFish} from "./fish/FishData.js";
+import { FishList, addFishToDOM } from "./fish/FishList.js";
 import { TipList } from "./tips/TipList.js";
 import { LocationList } from "./locations/LocationList.js";
 import { QuoteList } from "./quotes/QuoteList.js";
 
- const allfish = [...getMostHolyFish(), ...getSoldierFish(), ...getUnworthy()];
+//  const allfish = [...getMostHolyFish(), ...getSoldierFish(), ...getUnworthy()];
 
 const showFishList = () => {
-    const DOMTarget = document.querySelector("#fishList");
-    allfish.then((allFish) => {
-        DOMTarget.innerHTML = FishList(allFish);
-    })
+    // const DOMTarget = document.querySelector("#fishList");
+    // allfish.then((allFish) => {
+    //     DOMTarget.innerHTML = FishList(allFish);
+    // })
+    getMostHolyFish()
+    .then(()=> addFishToDOM(useHolyFish(), "Holy Fish")) 
+    getSoldierFish()
+    .then(() => addFishToDOM(useSoldierFish(), "Soldier Fish")); 
+    getUnworthy()
+    .then(()=> addFishToDOM(useUnworthyFish(), "Unworthy Fish"))
+
+    // addFishToDOM(getMostHolyFish(), "Holy Fish");
+    // addFishToDOM(getSoldierFish(), "Soldier Fish");
+    // addFishToDOM(getUnworthy(), "Unworthy Fish");
 }
 
 const startAquarium = () => {

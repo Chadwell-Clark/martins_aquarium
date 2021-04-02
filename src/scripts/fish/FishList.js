@@ -108,7 +108,7 @@
 //   let fishHTMLRepresentations = "";
 
 //   //4. Loop over the array of fish and for each one, invoke the Fish component which returns HTML representation
-//   for (const onefish of fishArray) {
+//   for (const onefish in fishArray) {
 //     fishHTMLRepresentations += Fish(onefish);
 //   }
 
@@ -122,47 +122,48 @@
 //!!!!*******      Refactor #2 below            **********
 
 import { Fish } from "./Fish.js";
-// import {
-//   getFish,
-//   getMostHolyFish,
-//   getSoldierFish,
-//   getUnworthy,
-// } from "./FishData.js";
+import {
+  getFish,
+  getMostHolyFish,
+  getSoldierFish,
+  getUnworthy,
+} from "./FishData.js";
 
-export const FishList = (allFish) => {
+// export const FishList = (allFish) => {
 
  
    
-    //3. Declare a variable to hold on to fish HTML representations
-    let fishHTML = "";
+//     //3. Declare a variable to hold on to fish HTML representations
+//     let fishHTML = "";
 
-    //4. Loop over the array of fish and for each one, invoke the Fish component which returns HTML representation
-    for (const onefish of allfish) {
-        fishHTML += Fish(onefish);
-    }
+//     //4. Loop over the array of fish and for each one, invoke the Fish component which returns HTML representation
+//     for (const onefish of allfish) {
+//         fishHTML += Fish(onefish);
+//     }
 
-    return fishHTML
+//     return fishHTML
 
+// };
+export const FishList = () => {
+  addFishToDOM(getMostHolyFish(), "Holy Fish");
+  addFishToDOM(getSoldierFish(), "Soldier Fish");
+  addFishToDOM(getUnworthy(), "Unworthy Fish");
 };
-// export const FishList = () => {
-//   addFishToDOM(getMostHolyFish(), "Holy Fish");
-//   addFishToDOM(getSoldierFish(), "Soldier Fish");
-//   addFishToDOM(getUnworthy(), "Unworthy Fish");
-// };
 
-// const addFishToDOM = (fishArray, heading) => {
-//   const DOMLocation = document.querySelector("#fishList");
-//   // console.log('fishlist reference', DOMLocation);
+export const addFishToDOM = (fishArray, heading) => {
+  const DOMLocation = document.querySelector("#fishList");
+  // console.log('fishlist reference', DOMLocation);
 
-//   //3. Declare a variable to hold on to fish HTML representations
-//   let fishHTMLRepresentations = "";
+  //3. Declare a variable to hold on to fish HTML representations
+  let fishHTMLRepresentations = "";
+  console.log("fishArray", fishArray)
 
-//   //4. Loop over the array of fish and for each one, invoke the Fish component which returns HTML representation
-//   for (const onefish of fishArray) {
-//     fishHTMLRepresentations += Fish(onefish);
-//   }
+  //4. Loop over the array of fish and for each one, invoke the Fish component which returns HTML representation
+  for (const onefish of fishArray) {
+    fishHTMLRepresentations += Fish(onefish);
+  }
 
-//   // console.log("fishHTMLRepresentations", fishHTMLRepresentations);
-//   DOMLocation.innerHTML += `<h2 class="fish-heading">${heading}</h2>
-//                             <div class="fishSection">${fishHTMLRepresentations}</div>`;
-// };
+  // console.log("fishHTMLRepresentations", fishHTMLRepresentations);
+  DOMLocation.innerHTML += `<h2 class="fish-heading">${heading}</h2>
+                            <div class="fishSection">${fishHTMLRepresentations}</div>`;
+};
